@@ -1,0 +1,49 @@
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+  }
+  
+  .filter-header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-types,
+  .filter-models,
+  .filter-prices {
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-types select,
+  .filter-models select,
+  .filter-prices select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .filter-section {
+    margin-bottom: 2rem;
+  }
+  
+  .filter-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .filter-section div {
+    margin-bottom: 0.5rem;
+  }
+  
+  .filter-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .filter-actions button {
+    margin-left: 1rem;
+  }
+  

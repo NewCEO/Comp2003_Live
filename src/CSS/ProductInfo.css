@@ -1,0 +1,84 @@
+.toast {
+  width: 68rem;
+  height: 39rem;
+  background-color: black;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider img {
+  width: 95%;
+}
+
+.Product-title {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  float: left;
+  width: 50%;
+}
+
+.Product-title h1 {
+  color: #ee3b33;
+  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.Product-title span {
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.Product-title p {
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.7rem;
+  text-align: justify;
+  margin-top: 1.7rem;
+}
+
+.right-card-div {
+  float: right;
+  width: 50%;
+}
+
+.product-card-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  background-color: white;
+  height: 8rem;
+}
+
+.product-cardbody {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-card-div h5 {
+  font-size: 0.85rem;
+  font-family: 'Work Sans', sans-serif;
+  color: red;
+  font-weight: 800;
+  margin-top: 80px;
+}
+
+.right-card-div span {
+  font-size: 0.6rem;
+  margin-top: 10px;
+  font-weight: 500;
+}

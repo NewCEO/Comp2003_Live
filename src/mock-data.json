@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Speed Master 1000",
+    "image": "https://images.boats.com/resize/1/83/40/8338340_20220601053956456_1_XLARGE.jpg?t=1654011812000&w=1200&h=1200,https://images.boats.com/resize/1/83/40/8338340_20220601054000709_1_XLARGE.jpg?t=1654011812000&w=1200&h=1200, https://images.boats.com/resize/1/83/40/8338340_20220601053951513_1_XLARGE.jpg?t=1654011812000&w=1200&h=1200",
+    "description": "Wow this boat is soo cool",
+    "specification": "Spec1 ### Spec2 ### Spec3",
+    "facts": "This is hidden from the boat view",
+    "price": "9000",
+    "rent": "500",
+    "type": "buy",
+    "Location": "The Americas"
+  },
+  {
+    "id": 2,
+    "name": "Speed Master 1000",
+    "image": "https://images.pexels.com/photos/6585322/pexels-photo-6585322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Speed master 1000 is the original fast boat!",
+    "specification": "Spec1 ### Spec2 ### Spec3",
+    "facts": "This is hidden from the boat view",
+    "price": "1,000,000",
+    "rent": "500"
+  },
+  {
+    "id": 3,
+    "name": "Speed Master 3000",
+    "image": "https://images.pexels.com/photos/6585322/pexels-photo-6585322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Wow this boat is soo cool",
+    "specification": "Spec1 ### Spec2 ### Spec3",
+    "facts": "This is hidden from the boat view",
+    "price": "1,000,000",
+    "rent": "500"
+  },
+  {
+    "id": 4,
+    "name": "Speed Master 1000",
+    "image": "https://images.pexels.com/photos/6585322/pexels-photo-6585322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Wow this boat is soo cool",
+    "specification": "Spec1 ### Spec2 ### Spec3",
+    "facts": "This is hidden from the boat view",
+    "price": "1,000,000",
+    "rent": "500"
+  },
+  {
+    "id": 5,
+    "name": "Speed Master 1000",
+    "image": "https://images.pexels.com/photos/6585322/pexels-photo-6585322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Wow this boat is soo cool",
+    "specification": "Spec1 ### Spec2 ### Spec3",
+    "facts": "This is hidden from the boat view",
+    "price": "1,000,000",
+    "rent": "500"
+  },
+  {
+    "id": 6,
+    "name": "Speed Master 4000",
+    "image": "https://images.pexels.com/photos/6585322/pexels-photo-6585322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Wow this boat is soo cool",
+    "specification": "Spec1 ### Spec2 ### Spec3",
+    "facts": "This is hidden from the boat view",
+    "price": "1,000,000",
+    "rent": "500"
+  },
+  {
+    "id": 7,
+    "name": "Speed Master 4000",
+    "image": "https://images.pexels.com/photos/6585322/pexels-photo-6585322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Wow this boat is soo cool",
+    "specification": "Spec1 ### Spec2 ### Spec3",
+    "facts": "This is hidden from the boat view",
+    "price": "1,000,000",
+    "rent": "500"
+  }
+]
