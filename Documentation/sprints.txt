@@ -1,0 +1,23 @@
+Project as of now, the project is mostly focused on the design on the prototype (Front end of the project)
+
+Sprint planning moving forward. Time periods of 3 days
+
+*Code specifics – routes and middleware
+
+*Create application environment (Setting up boiler plate code)
+
+*List all pages and divide them accordingly
+
+*Add dependencies to code base 
+
+*Gather development assets (logos and images) -involve client 
+
+*Create static sections of the pages
+
+*Project folder hierarchy arrangement 
+
+
+*Create actual pages (3 users) dashboard
+
+*State management (changing the state of a page without reloading)
+hooks  

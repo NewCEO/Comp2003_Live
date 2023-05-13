@@ -1,0 +1,42 @@
+29th November 2022
+DISCUSSIONS ON THE DESIGN
+
+. Sitemap of the user side displayed and discussed.
+. There are three parts of the platform
+>Users 
+>Boat owner 
+>Third party vendors
+
+Proposed tech stack
+>React js (front end)
+Node js 
+Digital ocean for cloud hosting 
+ASP .NET
+Java 
+
+* Client wants to see a propotype by 23rd December 2022
+
+. http://dskafos.com/ for inspo
+
+We need to work on 
+-UML diagrams 
+-User case 
+-User stories 
+
+. Trello setup - To manage our sprint backlog 
+
+User journey map 
+
+DO THIS ----> TASKLISTS -------------> HOW THE USER FEELS
+[Action]	[What user should do]	[Feeling adjective]
+
+^^This is part of the project plan
+
+.Customer should rent boat 
+.Boat owner should type in data 
+.Third party vendors should advertise company in relation to boats (eg insuarnace, maintainace and repairs)
+
+User buying - Michael
+User renting - Joe
+Boat owner - Clara
+Third party - Sharon

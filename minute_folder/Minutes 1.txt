@@ -1,0 +1,21 @@
+16th November 2022
+DISCUSSIONS ON THE BIRCHWOORD PROJECT 
+
+. Has to be cloud based 
+. It will initially be a website then devolop into a mobile app
+. All transactions will be made on the platform
+
+. The webpage should be quick easy and fast (reliable)
+>Contains virtual boats. The specs will be displayed beside
+>Once you click on the virtual boat you should be able to:
+-Access its history
+-Be able to rent it
+-Buy the boat
+-Access the quality of the rent out (In line with its history which should include the maintaince)
+
+. Getting legal rights GDRP
+
+*AVOID CLUNKY WEBSITE
+*THE USER EXPERIENCE SHOULD BE SEAMLESS 
+
+

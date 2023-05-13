@@ -1,0 +1,11 @@
+6th December 2022
+DISCUSSIONS OF WHAT THE CLIENT WANTS 
+
+. We are working with another group on the same github. We will have our own branch 
+. Working on front end first
+. Design prototype 
+ 
+> The prototype should be like ever other website that has a login and signup page at the top right corner 
+> A landing page is what the client wants
+> The landing page should guide the users 
+ 
