@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Boat from "./Pages/Boat_Page"
@@ -30,8 +28,8 @@ const App = () => {
   const [choice, setChoice] = useState(VendorData.user.choice)
   const [company, setCompany] = useState(VendorData.user.company)
 
-
   console.log('app', company)
+
 
   return (
     <div>
@@ -56,12 +54,8 @@ const App = () => {
         <Route path='/cardlist' element={<CardList />} />
         <Route path='/filterbar1' element={<FilterBar1 />} />
         <Route path='/filtercards' element={<Filtercards />} />
-
-
-
->>>>>>> 8c418bc427f4898b67bbca8589a7f98200b5e107
-      </Routes>
-    </div>
+      </Routes >
+    </div >
 
 
   )
