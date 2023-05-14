@@ -26,7 +26,7 @@ const Usertype = () => {
                   I need help picking out a vessel for a boat related activity.
                 </Card.Text>
               </Card.Body>
-              <a href="/filterbar" className="stretched-link">
+              <a href="/filter" className="stretched-link">
               </a>
             </Card>
 
