@@ -1,2 +1,8 @@
 [build]
 command = "npm run build -- --ignore-warnings"
+
+
+[[redirects]]
+  from = "/vendor"
+  to = "/index.html"
+  status = 200
