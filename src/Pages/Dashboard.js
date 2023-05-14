@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
-import { MdHome, MdFileUpload, MdLogoDev, MdDirectionsBoatFilled, MdEditDocument } from 'react-icons/md';
-import { AiFillAccountBook } from "react-icons/ai";
 import "../CSS/Dashboard.css"
 import Button from 'react-bootstrap/Button'
 import boatsData from "../boat-owner.json"
 import OwnerCard from '../Components/OwnerCard';
 import user_avatar from '../Assets/user-avatar.jpg'
-import { Container, Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSpeakerDeck, faTeamspeak, faTelegram } from '@fortawesome/free-brands-svg-icons';
-import { faBell, faCodeCommit, faHomeLgAlt, faMoneyBillWaveAlt, faQuestionCircle, faUpload, faWallet } from '@fortawesome/free-solid-svg-icons';
+import { faBell, faUserAlt, faHomeLgAlt, faMoneyBillWaveAlt, faQuestionCircle, faUpload, faWallet, faEdit } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -32,15 +29,15 @@ const Sidebar = ({ onChangePage }) => {
           </div>
           <hr />
           <div className="icon-container" onClick={() => onChangePage('Manage')}>
+            <FontAwesomeIcon icon={faEdit} className='icon' />
+          </div>
+          <hr />
+          <div className="icon-container" onClick={() => onChangePage('Notifcation')}>
+            <FontAwesomeIcon icon={faUserAlt} className='icon' />
+          </div>
+          <hr />
+          <div className="icon-container" onClick={() => onChangePage('Notifcation')}>
             <FontAwesomeIcon icon={faWallet} className='icon' />
-          </div>
-          <hr />
-          <div className="icon-container" onClick={() => onChangePage('Notifcation')}>
-            <FontAwesomeIcon icon={faCodeCommit} className='icon' />
-          </div>
-          <hr />
-          <div className="icon-container" onClick={() => onChangePage('Notifcation')}>
-            <FontAwesomeIcon icon={faBell} className='icon' />
           </div>
           <hr />
         </div>
@@ -106,8 +103,8 @@ const HomePage = ({ page }) => {
             <Col sm={12} style={{ marginBottom: '15px' }}>
               <Card>
                 <Card.Body className='promotions-card-body'>
-                  <span className="card-icon"><FontAwesomeIcon icon={faMoneyBillWaveAlt} /></span>
-                  <Card.Title className='promotions-card-title'>This is the promotions tab, you can promote products you’ve uploaded for sale or rent.</Card.Title>
+                  <span className="card-icon"><FontAwesomeIcon icon={faEdit} /></span>
+                  <Card.Title className='promotions-card-title'>This is the listings tab where you can view and edit your current listings</Card.Title>
                 </Card.Body>
               </Card>
             </Col>
@@ -130,8 +127,8 @@ const HomePage = ({ page }) => {
             <Col sm={12} style={{ marginBottom: '15px' }}>
               <Card>
                 <Card.Body className='promotions-card-body'>
-                  <span className="card-icon"><FontAwesomeIcon icon={faCodeCommit} /></span>
-                  <Card.Title className='promotions-card-title'>This is the request tab where you can make request from our quality service providers</Card.Title>
+                  <span className="card-icon"><FontAwesomeIcon icon={faUserAlt} /></span>
+                  <Card.Title className='promotions-card-title'>This is profile tab, where you can view your profile info and summary of listings</Card.Title>
                 </Card.Body>
               </Card>
             </Col>
@@ -152,13 +149,13 @@ const HomePage = ({ page }) => {
   );
 };
 
-const UploadPage = ({onAddBoat,handleChangePage } ) => {
+const UploadPage = ({ onAddBoat, handleChangePage }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { boatName, address, price, description } = e.target.elements;
 
     const newBoat = {
-      id: Math.floor(Math.random() * 10000), 
+      id: Math.floor(Math.random() * 10000),
       name: boatName.value,
       location: address.value,
       price: `$${price.value}`,
@@ -166,7 +163,7 @@ const UploadPage = ({onAddBoat,handleChangePage } ) => {
     };
 
     onAddBoat(newBoat);
-    e.target.reset(); 
+    e.target.reset();
     handleChangePage('Manage');
   };
 
@@ -189,7 +186,7 @@ const UploadPage = ({onAddBoat,handleChangePage } ) => {
         <textarea id="description" name="description" required />
       </div>
       <button type="submit">Submit</button>
-    </form> 
+    </form>
   );
 };
 
@@ -200,7 +197,7 @@ const Manage = ({ boatsData, onUpdate, onDelete }) => {
     <>
       <div className="manage">
         {boatsData.map((boat) => (
-          <OwnerCard key={boat.id} boat={boat} onUpdate={onUpdate} onDelete={onDelete}/>
+          <OwnerCard key={boat.id} boat={boat} onUpdate={onUpdate} onDelete={onDelete} />
         ))}
       </div>
     </>
@@ -209,8 +206,8 @@ const Manage = ({ boatsData, onUpdate, onDelete }) => {
 
 
 
-const Account = ({ page,choice,company}) => {
-  console.log('account-dashboard',company,choice)
+const Account = ({ page, choice, company }) => {
+  console.log('account-dashboard', company, choice)
   const selectedChoice = choice.map((choice) => {
     if (choice.selected === true) {
       return (
@@ -229,25 +226,25 @@ const Account = ({ page,choice,company}) => {
         <p><b>Number of boats:</b>:</p>
         <p>{boatsData.owner.boats.length}</p>
         <div className="account-card-buttons">
-            <button>Edit</button>
-          </div>
+          <button>Edit</button>
+        </div>
       </div>
     </div>
   );
 };
 
-const MainPage = ({ page, boatsData, onAddBoat, onUpdate, onDelete,handleChangePage,choice,company  }) => {
+const MainPage = ({ page, boatsData, onAddBoat, onUpdate, onDelete, handleChangePage, choice, company }) => {
   return (
     <div className="main-page">
       {page === 'Home' && <HomePage />}
-      {page === 'Upload' && <UploadPage onAddBoat={onAddBoat} handleChangePage={handleChangePage}/>}
-      {page === 'Notifcation' && <Account choice={choice} company={company}/>}
+      {page === 'Upload' && <UploadPage onAddBoat={onAddBoat} handleChangePage={handleChangePage} />}
+      {page === 'Notifcation' && <Account choice={choice} company={company} />}
       {page === 'Manage' && <Manage boatsData={boatsData} onUpdate={onUpdate} onDelete={onDelete} />}
     </div>
   );
 };
 
-function Dashboard({choice,company}) {
+function Dashboard({ choice, company }) {
   const [currentPage, setCurrentPage] = useState('Home');
   const [currentBoatsData, setBoatsData] = useState(boatsData.owner.boats);
 

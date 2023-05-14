@@ -6,7 +6,7 @@ function CardList() {
   return (
     <div className="card-list">
       {rawdata.map((boat) => (
-        <div key={boat.id} className="card">
+        <div key={boat.id} className="cardListCard">
           <img src={boat.image} alt={boat.name} />
           <div className="card-body">
             <h5 className="card-title">{boat.name}</h5>

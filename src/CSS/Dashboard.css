@@ -11,11 +11,10 @@
   align-items: left;
   padding: 10px;
   color: black;
-  position: fixed;
+  position: absolute;
   top: 2;
   left: 0;
   width: 100%;
-  z-index: 2;
 }
 
 .low-bar {
@@ -314,7 +313,7 @@
 
 .card p {
   margin: 0;
-  line-height: 2;
+  /* line-height: 2; */
 }
 
 .content-wrapper {
