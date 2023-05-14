@@ -42,11 +42,18 @@ const Vendor = ({ choice, setChoice, company, setCompany }) => {
       setName(event.target.value);
     };
 
+    // useEffect(() => {
+    //   if (company[1].selected) {
+    //     inputRef.current.focus();
+    //   }
+    // }, [name]);
+
     useEffect(() => {
       if (company[1].selected) {
         inputRef.current.focus();
       }
-    }, [name]);
+    }, [name, company]);
+
 
     console.log('vendor', company)
 

@@ -4,8 +4,8 @@ import '../CSS/BoatNavbar.css';
 
 function BackButton() {
   return (
-    <button classname='back-button'> 
-        <img src={back}/>
+    <button className='back-button'>
+      <img src={back} alt="Back" />
     </button>
   );
 }

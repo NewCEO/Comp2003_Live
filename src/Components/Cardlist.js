@@ -11,11 +11,12 @@ function CardList() {
           <div className="card-body">
             <h5 className="card-title">{boat.name}</h5>
             <p className="card-text">{boat.description}</p>
-            <a href="#" className="btn btn-primary">view details</a>
+            <button className="btn btn-primary">view details</button>
           </div>
         </div>
       ))}
     </div>
+
   );
 }
 
