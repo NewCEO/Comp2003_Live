@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../CSS/Filtercards.css";
 import FilterBar from "../Components/Filterbar";
 import CardList from "../Components/Cardlist";
-import NavBar from "./LandingNav"
+// import NavBar from "./LandingNav"
 
 function Filtercards() {
   const [filter, setFilter] = useState({

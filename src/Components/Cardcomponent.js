@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button, Navbar } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import rawData from '../mock-data.json';
 import FilterBar from './Sidebar 1.js';
 import Navigation from './LandingNav';
@@ -7,8 +7,8 @@ import Navigation from './LandingNav';
 function CardComponent() {
   return (
     <Container fluid className="mt-4">
-      <Navigation/>
-    <Row>
+      <Navigation />
+      <Row>
         <Col md={3}>
           <FilterBar />
         </Col>

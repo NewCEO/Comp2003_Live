@@ -1,5 +1,5 @@
 import React, { } from "react";
-import { useNavigate, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
 import NavBar from "./LandingNav"

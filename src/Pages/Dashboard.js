@@ -6,7 +6,7 @@ import OwnerCard from '../Components/OwnerCard';
 import user_avatar from '../Assets/user-avatar.jpg'
 import { Card, Col, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBell, faUserAlt, faHomeLgAlt, faMoneyBillWaveAlt, faQuestionCircle, faUpload, faWallet, faEdit } from '@fortawesome/free-solid-svg-icons';
+import { faUserAlt, faHomeLgAlt, faQuestionCircle, faUpload, faWallet, faEdit } from '@fortawesome/free-solid-svg-icons';
 
 
 

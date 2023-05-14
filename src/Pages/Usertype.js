@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import Navbar from '../Components/LandingNav';
-import logo from '../Assets/logo.png';
 import "../CSS/usertype.css"
 import { Container, Row, Col } from "react-bootstrap";
 
