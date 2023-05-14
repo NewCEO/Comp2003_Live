@@ -19,6 +19,3 @@ Tasks were allocated during meetings and the Trello board was updated accordingl
 
 <h1>Prototype Video</h1>
 https://youtu.be/ldotlGiNgtE
-
-<p>SG.v3MwoVXtRti968Ygjb-HoQ.\_8GZbeyCZn-61XIeN-pNRTM2pff54Mb_NyDjckbgA0U</p>
-<p>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</p>

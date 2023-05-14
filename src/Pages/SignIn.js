@@ -1,6 +1,6 @@
-import React from "react";
-import sgMail from '@sendgrid/mail';
-
+import React, { useState } from "react";
+// import sgMail from '@sendgrid/mail';
+import { useNavigate } from 'react-router-dom'
 import "../CSS/login.css"
 import { Link } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
@@ -16,7 +16,7 @@ import { faGoogle, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-i
 
 const SignIn = () => {
     const [email, setEmail] = useState('');
-
+    const navigate = useNavigate()
     const sendConfirmationEmail = () => {
         // Validate the email
         if (!email) {
