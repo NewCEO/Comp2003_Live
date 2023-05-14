@@ -22,14 +22,15 @@ const OwnerCard = ({ boat, onUpdate, onDelete }) => {
     const handleDelete = () => {
       onDelete(boat.id);
     };
-  
+
+    let formattedTotal = `$${boat.price.toLocaleString()}`;
     return isEditing ? (
       <OwnerEdited boat={boat} onSave={handleSave} onCancel={handleCancel} />
     ) : (
       <div className="manage-card">
         <div className="manage-text">
             <p><b>{boat.name}</b></p>
-            <p><b>Price:</b> {boat.price}</p>
+            <p><b>Price:</b> {formattedTotal}</p>
             <br />
             <p><b>Location: </b>{boat.location}</p>
             <br />

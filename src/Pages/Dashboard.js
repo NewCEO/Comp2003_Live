@@ -7,6 +7,7 @@ import user_avatar from '../Assets/user-avatar.jpg'
 import { Card, Col, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserAlt, faHomeLgAlt, faQuestionCircle, faUpload, faWallet, faEdit } from '@fortawesome/free-solid-svg-icons';
+import { useEffect } from 'react';
 
 
 
@@ -36,7 +37,7 @@ const Sidebar = ({ onChangePage }) => {
             <FontAwesomeIcon icon={faUserAlt} className='icon' />
           </div>
           <hr />
-          <div className="icon-container" onClick={() => onChangePage('Notifcation')}>
+          <div className="icon-container" onClick={() => onChangePage('Wallet')}>
             <FontAwesomeIcon icon={faWallet} className='icon' />
           </div>
           <hr />
@@ -76,7 +77,7 @@ const HomePage = ({ page }) => {
         <Col>
           <Row>
             <Col sm={12} style={{ marginBottom: '15px' }}>
-              <Card style={{ height: '300px' }} className='dashboard-card'>
+              <Card style={{ minHeight: '300px' }} className='dashboard-card'>
                 <Card.Body>
                   <Card.Title style={{ textAlign: 'left' }} className='dashboard-card-title'>
                     Welcome to your Birchwood Dashboard. A verification mail has been sent to your inbox, if you haven’t received one, please click the button below to resend the verification mail.
@@ -90,7 +91,7 @@ const HomePage = ({ page }) => {
               </Card>
             </Col>
             <Col sm={12} style={{ marginBottom: '15px' }}>
-              <Card style={{ height: '300px' }}>
+              <Card style={{ minHeight: '280px' }}>
                 <Card.Body>
                   <Card.Title style={{ textAlign: 'left' }}>Product Wishlist</Card.Title>
                 </Card.Body>
@@ -100,15 +101,7 @@ const HomePage = ({ page }) => {
         </Col>
         <Col>
           <Row>
-            <Col sm={12} style={{ marginBottom: '15px' }}>
-              <Card>
-                <Card.Body className='promotions-card-body'>
-                  <span className="card-icon"><FontAwesomeIcon icon={faEdit} /></span>
-                  <Card.Title className='promotions-card-title'>This is the listings tab where you can view and edit your current listings</Card.Title>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col sm={12} style={{ marginBottom: '15px' }}>
+            <Col sm={12} style={{ marginBottom: '25px' }}>
               <Card>
                 <Card.Body className='promotions-card-body'>
                   <span className="card-icon"><FontAwesomeIcon icon={faUpload} /></span>
@@ -116,19 +109,27 @@ const HomePage = ({ page }) => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col sm={12} style={{ marginBottom: '15px' }}>
+            <Col sm={12} style={{ marginBottom: '25px' }}>
               <Card>
                 <Card.Body className='promotions-card-body'>
-                  <span className="card-icon"><FontAwesomeIcon icon={faWallet} /></span>
-                  <Card.Title className='promotions-card-title'>This is the wallet tab, where you can track all moneys going in and out of your Dskafos account</Card.Title>
+                  <span className="card-icon"><FontAwesomeIcon icon={faEdit} /></span>
+                  <Card.Title className='promotions-card-title'>This is the listings tab where you can view and edit your current listings</Card.Title>
                 </Card.Body>
               </Card>
             </Col>
-            <Col sm={12} style={{ marginBottom: '15px' }}>
+            <Col sm={12} style={{ marginBottom: '25px' }}>
               <Card>
                 <Card.Body className='promotions-card-body'>
                   <span className="card-icon"><FontAwesomeIcon icon={faUserAlt} /></span>
                   <Card.Title className='promotions-card-title'>This is profile tab, where you can view your profile info and summary of listings</Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col sm={12} style={{ marginBottom: '25px' }}>
+              <Card>
+                <Card.Body className='promotions-card-body'>
+                  <span className="card-icon"><FontAwesomeIcon icon={faWallet} /></span>
+                  <Card.Title className='promotions-card-title'>This is the wallet tab, where you can track all money going in and out of your Dskafos account</Card.Title>
                 </Card.Body>
               </Card>
             </Col>
@@ -158,7 +159,7 @@ const UploadPage = ({ onAddBoat, handleChangePage }) => {
       id: Math.floor(Math.random() * 10000),
       name: boatName.value,
       location: address.value,
-      price: `$${price.value}`,
+      price: parseFloat(price.value),
       description: description.value,
     };
 
@@ -233,18 +234,40 @@ const Account = ({ page, choice, company }) => {
   );
 };
 
-const MainPage = ({ page, boatsData, onAddBoat, onUpdate, onDelete, handleChangePage, choice, company }) => {
+const Wallet = ({boatsData,money}) => {
+
+  let total = 0
+  boatsData.forEach((boat) => {
+    total += boat.price;
+  });
+
+  let fommattedMoney = `$${money.toLocaleString()}`;
+  let formattedTotal = `$${total.toLocaleString()}`;
+  
+  return (
+    <div className="wallet">
+      <div className="wallet-card">
+        <h1>Total money in account</h1> <h2>{fommattedMoney}</h2>
+        <h1>Value of all boats</h1> <h2>{formattedTotal}</h2>
+      </div>
+
+    </div>
+  );
+};
+
+const MainPage = ({ page, boatsData, onAddBoat, onUpdate, onDelete, handleChangePage, choice, company,money }) => {
   return (
     <div className="main-page">
       {page === 'Home' && <HomePage />}
       {page === 'Upload' && <UploadPage onAddBoat={onAddBoat} handleChangePage={handleChangePage} />}
       {page === 'Notifcation' && <Account choice={choice} company={company} />}
       {page === 'Manage' && <Manage boatsData={boatsData} onUpdate={onUpdate} onDelete={onDelete} />}
+      {page === 'Wallet' && <Wallet boatsData={boatsData} onUpdate={onUpdate} onDelete={onDelete} money={money} />}
     </div>
   );
 };
 
-function Dashboard({ choice, company }) {
+function Dashboard({ choice, company, money }) {
   const [currentPage, setCurrentPage] = useState('Home');
   const [currentBoatsData, setBoatsData] = useState(boatsData.owner.boats);
 
@@ -267,7 +290,7 @@ function Dashboard({ choice, company }) {
   const deleteBoat = (boatId) => {
     setBoatsData((prevState) => prevState.filter((boat) => boat.id !== boatId));
   };
-
+  console.log("money=",money)
   return (
     <div className="dashboard">
       <TopBar />
@@ -281,6 +304,7 @@ function Dashboard({ choice, company }) {
         handleChangePage={handleChangePage}
         choice={choice}
         company={company}
+        money={money}
       />
     </div>
   );

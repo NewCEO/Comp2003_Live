@@ -17,43 +17,43 @@ import { faGoogle, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-i
 const SignIn = () => {
     const [email, setEmail] = useState('');
     const navigate = useNavigate()
-    // const sendConfirmationEmail = () => {
-    //     // Validate the email
-    //     if (!email) {
-    //         alert('Please enter a valid email address.');
-    //         return;
-    //     }
+    const sendConfirmationEmail = () => {
+        // Validate the email
+        if (!email) {
+            alert('Please enter a valid email address.');
+            return;
+        }
 
-    //     // Send the confirmation email
-    //     const sgMail = require('@sendgrid/mail');
-    //     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+        // Send the confirmation email
+        const sgMail = require('@sendgrid/mail');
+        sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-    //     const msg = {
-    //         to: email,
-    //         from: 'Dskafos@dskafos.com', // Change to your verified sender
-    //         subject: 'Welcome to DSKAFOS',
-    //         text: 'Thank you for signing up!',
-    //         html: '<strong>Thank you for signing up!</strong>',
-    //     };
+        const msg = {
+            to: email,
+            from: 'Dskafos@dskafos.com', // Change to your verified sender
+            subject: 'Welcome to DSKAFOS',
+            text: 'Thank you for signing up!',
+            html: '<strong>Thank you for signing up!</strong>',
+        };
 
-    //     sgMail
-    //         .send(msg)
-    //         .then(() => {
-    //             console.log('Email sent');
-    //             alert('Confirmation email sent. Please check your inbox.');
-    //         })
-    //         .catch((error) => {
-    //             console.error(error);
-    //             alert('An error occurred while sending the confirmation email.');
-    //         });
-    // };
+        sgMail
+            .send(msg)
+            .then(() => {
+                console.log('Email sent');
+                alert('Confirmation email sent. Please check your inbox.');
+            })
+            .catch((error) => {
+                console.error(error);
+                alert('An error occurred while sending the confirmation email.');
+            });
+    };
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
     };
 
     const handleClick = () => {
-        // sendConfirmationEmail();
+        sendConfirmationEmail();
         navigate('/dashboard');
     };
 

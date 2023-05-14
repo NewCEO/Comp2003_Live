@@ -27,8 +27,8 @@ const App = () => {
 
   const [choice, setChoice] = useState(VendorData.user.choice)
   const [company, setCompany] = useState(VendorData.user.company)
+  const [money, setMoney] = useState(VendorData.user.money)
 
-  console.log('app', company)
 
 
   return (
@@ -44,7 +44,7 @@ const App = () => {
         <Route path="/signup" element={<SignIn />} />
         <Route path='/usertype' element={<Usertype />} />
         <Route path='/vendor' element={<Vendor choice={choice} setChoice={setChoice} company={company} setCompany={setCompany} />} />
-        <Route path='/dashboard' element={<Dashboard choice={choice} company={company} />} />
+        <Route path='/dashboard' element={<Dashboard choice={choice} company={company} money={money} />} />
         <Route path='/vendor' element={<Vendor />} />
         {/* <Route path='/user' element={<User />} /> */}
         <Route path='/dashboard' element={<Dashboard />} />

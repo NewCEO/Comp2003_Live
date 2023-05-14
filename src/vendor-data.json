@@ -1,5 +1,6 @@
 {
   "user": {
+    "money":"100,000",
     "choice":[
       {
         "id": 1,
@@ -38,7 +39,6 @@
         "name": "I work alone",
         "selected": false
       },
-
       {
         "id": 8,
         "name": "I represent a company",

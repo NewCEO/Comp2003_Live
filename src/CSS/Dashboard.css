@@ -30,7 +30,7 @@
   font-size: 40px;
   font-weight: bold;
   text-align: left;
-  margin-left: 150px;
+  margin-left: 200px;
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -50,7 +50,7 @@
 
 /* Sidebar */
 .sidebar {
-  width: 75px;
+  width: 125px;
   background-color: #ee3b33;
   display: flex;
   flex-direction: column;
@@ -100,7 +100,7 @@
 .icon-container {
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding: 50px;
 }
 
 .sidebar .sidebar-icons > * {
@@ -158,7 +158,7 @@
 
 .upload-form button {
   padding: 10px 20px;
-  background-color: #ff3c00;
+  background-color: #ee3b33;
   color: white;
   font-size: 16px;
   border: none;
@@ -181,10 +181,10 @@
 }
 
 .manage-card {
-  background-color: #f8f8f8;
+  background-color: #fff;; 
   border: 1px solid #e3e3e3;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 300px;
   padding: 20px;
   display: flex;
@@ -213,7 +213,7 @@
 }
 
 .card-buttons button {
-  background-color: #ff3c00;
+  background-color: #ee3b33;
   border: none;
   border-radius: 3px;
   color: white;
@@ -232,7 +232,7 @@
   background-color: #f8f8f8;
   border: 1px solid #e3e3e3;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   height: 300px;
   width: 300px;
   padding: 20px;
@@ -255,7 +255,7 @@
 }
 
 .edited-card button {
-  background-color: #ff3c00;
+  background-color: #ee3b33;
   border: none;
   border-radius: 3px;
   color: white;
@@ -284,9 +284,9 @@
 }
 
 .card {
-  background-color: #f5f5f5; /*changed css from red to light grey */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-  border-radius: 4px;
+  background-color: #fff;; /*changed css from red to light grey */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1px;
   padding: 15px;
   margin-bottom: 20px;
 }
@@ -364,7 +364,7 @@
   background-color: #f8f8f8;
   border: 1px solid #e3e3e3;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 300px;
   padding: 20px;
 }
@@ -378,7 +378,7 @@
   font-size: 16px;
 }
 .account-card-buttons button {
-  background-color: #ff3c00;
+  background-color: #ee3b33;
   border: none;
   border-radius: 3px;
   color: white;
@@ -392,6 +392,34 @@
 .account-card-buttons button:hover {
   background-color: #fab5a09d;
 }
+
+/* Wallet */
+
+.wallet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wallet-card {
+  background-color: #f8f8f8;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 300px;
+  padding: 20px;
+}
+
+.wallet-card h1 {
+  font-size: 32px;
+  margin: 0 0 20px;
+}
+
+.wallet-card h2{
+  color: rgba(0, 0, 0, 0.966);
+  margin-bottom: 20px;
+}
+
 
 /* sharon css*/
 .dashboard-card {
