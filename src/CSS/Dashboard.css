@@ -115,7 +115,7 @@
 }
 
 .icon-container:hover {
-  background-color: #fab5a09d;
+  background-color: #faada0b4;
 }
 
 .icon {
@@ -167,7 +167,7 @@
 }
 
 .upload-form button:hover {
-  background-color: #fab5a09d;
+  background-color: #faada0b4;
 }
 
 /* Manage */
@@ -225,7 +225,7 @@
 }
 
 .card-buttons button:hover {
-  background-color: #fab5a09d;
+  background-color: #faada0b4;
 }
 
 .edited-card {
@@ -267,7 +267,7 @@
 }
 
 .card-buttons button:hover {
-  background-color: #fab5a09d;
+  background-color: #faada0b4;
 }
 
 /* Home Page */
@@ -390,7 +390,7 @@
 }
 
 .account-card-buttons button:hover {
-  background-color: #fab5a09d;
+  background-color: #faada0b4;
 }
 
 /* Wallet */
@@ -420,6 +420,21 @@
   margin-bottom: 20px;
 }
 
+.home-button {
+  background-color: #ee3b33;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  width: 250px;
+  margin-top: 40px;
+}
+.home-button:hover {
+  background-color: #faada0b4;
+}
 
 /* sharon css*/
 .dashboard-card {

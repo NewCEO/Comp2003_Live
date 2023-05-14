@@ -15,48 +15,33 @@ import { faGoogle, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-i
 
 
 const SignIn = () => {
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const navigate = useNavigate()
-    const sendConfirmationEmail = () => {
-        // Validate the email
-        if (!email) {
-            alert('Please enter a valid email address.');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if (!name || !email || !password || !confirmPassword) {
+            alert('Please fill in all fields.');
             return;
         }
 
-        // Send the confirmation email
-        const sgMail = require('@sendgrid/mail');
-        sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+        if (password !== confirmPassword) {
+            alert('Passwords do not match.');
+            return;
+        }
 
-        const msg = {
-            to: email,
-            from: 'Dskafos@dskafos.com', // Change to your verified sender
-            subject: 'Welcome to DSKAFOS',
-            text: 'Thank you for signing up!',
-            html: '<strong>Thank you for signing up!</strong>',
+        const formData = {
+            name: e.target.elements.name.value,
+            email: e.target.elements.email.value,
         };
 
-        sgMail
-            .send(msg)
-            .then(() => {
-                console.log('Email sent');
-                alert('Confirmation email sent. Please check your inbox.');
-            })
-            .catch((error) => {
-                console.error(error);
-                alert('An error occurred while sending the confirmation email.');
-            });
+        // Store form data in URL parameters
+        navigate(`/dashboard?name=${formData.name}&email=${formData.email}`);
     };
-
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value);
-    };
-
-    const handleClick = () => {
-        sendConfirmationEmail();
-        navigate('/dashboard');
-    };
-
     return (
         <>
 
@@ -81,27 +66,27 @@ const SignIn = () => {
                     <p>Already have an account? <span ><Link className="link-text" to="/login">Click here to log in, </Link></span> it takes less than a minute.</p>
                 </div>
                 <Stack direction="vertical" gap={2}>
-                    <Form>
-                        <Form.Group className="mb-5" controlId="formBasicEmail">
+                    <Form onSubmit={handleSubmit}>
+                        <Form.Group controlId="formBasicName">
                             <Form.Label>Full Name</Form.Label>
-                            <Form.Control type="Text" />
+                            <Form.Control type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} />
                         </Form.Group>
 
-                        <Form.Group className="mb-5" controlId="formBasicEmail">
+                        <Form.Group controlId="formBasicEmail">
                             <Form.Label>Email</Form.Label>
-                            <Form.Control type="email" value={email} onChange={handleEmailChange} />
+                            <Form.Control type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                         </Form.Group>
 
                         <Form.Group className="mb-5" controlId="formBasicPassword">
                             <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" />
+                            <Form.Control type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                         </Form.Group>
 
                         <Form.Group className="mb-5" controlId="formBasicPassword">
                             <Form.Label>Confirm Password</Form.Label>
-                            <Form.Control type="password" />
+                            <Form.Control type="password" name="confirmPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
                         </Form.Group>
-                        <Button className="login-btn" onClick={handleClick}>
+                        <Button type="submit" className="login-btn">
                             Sign Up
                         </Button>
                         <div className="options">

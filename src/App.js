@@ -47,7 +47,7 @@ const App = () => {
         <Route path='/dashboard' element={<Dashboard choice={choice} company={company} money={money} />} />
         <Route path='/vendor' element={<Vendor />} />
         {/* <Route path='/user' element={<User />} /> */}
-        <Route path='/dashboard' element={<Dashboard />} />
+        {/* <Route path='/dashboard' element={<Dashboard />} /> */}
         {/* <Route path='/boatid' element={<BoatId />} /> */}
         <Route path='/cardcomponent' element={<CardComponent />} />
         <Route path='/filterbar' element={<FilterBar />} />

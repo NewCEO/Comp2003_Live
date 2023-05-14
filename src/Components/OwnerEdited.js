@@ -4,9 +4,10 @@ const OwnerEdited = ({ boat, onSave, onCancel }) => {
   const [editedBoat, setEditedBoat] = useState(boat);
 
   const handleChange = (e) => {
-    setEditedBoat({ ...editedBoat, [e.target.name]: e.target.value });
+    const value = e.target.name === 'price' ? parseFloat(e.target.value) : e.target.value;
+    setEditedBoat({ ...editedBoat, [e.target.name]: value });
   };
-
+  
   const handleSave = () => {
     onSave(editedBoat);
   };
@@ -22,7 +23,7 @@ const OwnerEdited = ({ boat, onSave, onCancel }) => {
       <input
         type="text"
         name="price"
-        value={editedBoat.price}
+        value={parseFloat(editedBoat.price)}
         onChange={handleChange}
       />
       <input

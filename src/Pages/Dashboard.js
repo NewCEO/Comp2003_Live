@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import "../CSS/Dashboard.css"
-import Button from 'react-bootstrap/Button'
 import boatsData from "../boat-owner.json"
 import OwnerCard from '../Components/OwnerCard';
 import user_avatar from '../Assets/user-avatar.jpg'
 import { Card, Col, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserAlt, faHomeLgAlt, faQuestionCircle, faUpload, faWallet, faEdit } from '@fortawesome/free-solid-svg-icons';
-// import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 
 
@@ -48,16 +47,19 @@ const Sidebar = ({ onChangePage }) => {
 };
 
 const TopBar = () => {
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const name = searchParams.get('name');
   return (
     <div className="top-bar">
-      <div className="user-welcome">Welcome Bryen</div>
+      <div className="user-welcome">Welcome {name}</div>
       <div className="user-info">
         <img
           className="user-avatar"
           src={user_avatar}
           alt="User Avatar"
         />
-        <span className="user-name">John Doe</span>
+        <span className="user-name">{name}</span>
         <br />
       </div>
       <Row>
@@ -85,7 +87,7 @@ const HomePage = ({ page }) => {
                   <Card.Text className='dashboard-card-text'>
                     Please note you can’t move on to purchase without a successful verification.
                   </Card.Text>
-                  <Button className='resend-btn'>Resend Verification Mail</Button>
+                  <button className="home-button">Resend Verficiation Mail</button>
                 </Card.Body>
 
               </Card>
@@ -217,18 +219,25 @@ const Account = ({ page, choice, company }) => {
     }
     return null;
   });
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const name = searchParams.get('name');
+  const email = searchParams.get('email');
   return (
     <div className="account">
       <div className="account-card">
-        {company[1].selected && <h2>{company[1].name}</h2>}
-        {company[0].selected && <h2>I work Independently</h2>}
+        <p><b>Full name</b></p>
+        <p>{name}</p>
+        <p><b>Email</b></p>
+        <p>{email}</p>
+        <p><b>Company</b></p>
+        {company[1].selected && <p>{company[1].name}</p>}
+        {company[0].selected && <p>I work Independently</p>}
         <p><b>Services:</b></p>
         {selectedChoice}
         <p><b>Number of boats:</b>:</p>
         <p>{boatsData.owner.boats.length}</p>
-        <div className="account-card-buttons">
-          <button>Edit</button>
-        </div>
+
       </div>
     </div>
   );
