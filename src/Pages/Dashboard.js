@@ -7,7 +7,7 @@ import user_avatar from '../Assets/user-avatar.jpg'
 import { Card, Col, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserAlt, faHomeLgAlt, faQuestionCircle, faUpload, faWallet, faEdit } from '@fortawesome/free-solid-svg-icons';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 
 
@@ -234,7 +234,7 @@ const Account = ({ page, choice, company }) => {
   );
 };
 
-const Wallet = ({boatsData,money}) => {
+const Wallet = ({ boatsData, money }) => {
 
   let total = 0
   boatsData.forEach((boat) => {
@@ -243,7 +243,7 @@ const Wallet = ({boatsData,money}) => {
 
   let fommattedMoney = `$${money.toLocaleString()}`;
   let formattedTotal = `$${total.toLocaleString()}`;
-  
+
   return (
     <div className="wallet">
       <div className="wallet-card">
@@ -255,7 +255,7 @@ const Wallet = ({boatsData,money}) => {
   );
 };
 
-const MainPage = ({ page, boatsData, onAddBoat, onUpdate, onDelete, handleChangePage, choice, company,money }) => {
+const MainPage = ({ page, boatsData, onAddBoat, onUpdate, onDelete, handleChangePage, choice, company, money }) => {
   return (
     <div className="main-page">
       {page === 'Home' && <HomePage />}
@@ -290,7 +290,7 @@ function Dashboard({ choice, company, money }) {
   const deleteBoat = (boatId) => {
     setBoatsData((prevState) => prevState.filter((boat) => boat.id !== boatId));
   };
-  console.log("money=",money)
+  console.log("money=", money)
   return (
     <div className="dashboard">
       <TopBar />

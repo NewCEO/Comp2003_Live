@@ -27,7 +27,7 @@ const App = () => {
 
   const [choice, setChoice] = useState(VendorData.user.choice)
   const [company, setCompany] = useState(VendorData.user.company)
-  const [money, setMoney] = useState(VendorData.user.money)
+  const [money] = useState(VendorData.user.money)
 
 
 
