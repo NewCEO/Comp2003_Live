@@ -1,6 +1,8 @@
 import React from "react";
+import sgMail from '@sendgrid/mail';
+
 import "../CSS/login.css"
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Stack from 'react-bootstrap/Stack';
@@ -13,11 +15,47 @@ import { faGoogle, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-i
 
 
 const SignIn = () => {
-    const navigate = useNavigate();
+    const [email, setEmail] = useState('');
 
-    function handleClick() {
+    const sendConfirmationEmail = () => {
+        // Validate the email
+        if (!email) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+
+        // Send the confirmation email
+        const sgMail = require('@sendgrid/mail');
+        sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+        const msg = {
+            to: email,
+            from: 'Dskafos@dskafos.com', // Change to your verified sender
+            subject: 'Welcome to DSKAFOS',
+            text: 'Thank you for signing up!',
+            html: '<strong>Thank you for signing up!</strong>',
+        };
+
+        sgMail
+            .send(msg)
+            .then(() => {
+                console.log('Email sent');
+                alert('Confirmation email sent. Please check your inbox.');
+            })
+            .catch((error) => {
+                console.error(error);
+                alert('An error occurred while sending the confirmation email.');
+            });
+    };
+
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+    };
+
+    const handleClick = () => {
+        sendConfirmationEmail();
         navigate('/dashboard');
-    }
+    };
 
     return (
         <>
@@ -51,7 +89,7 @@ const SignIn = () => {
 
                         <Form.Group className="mb-5" controlId="formBasicEmail">
                             <Form.Label>Email</Form.Label>
-                            <Form.Control type="email" />
+                            <Form.Control type="email" value={email} onChange={handleEmailChange} />
                         </Form.Group>
 
                         <Form.Group className="mb-5" controlId="formBasicPassword">
