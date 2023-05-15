@@ -179,25 +179,29 @@ const UploadPage = ({ onAddBoat, handleChangePage }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="upload-form">
-      <div>
-        <label htmlFor="boatName">Boat Name:</label>
-        <input type="text" id="boatName" name="boatName" required />
-      </div>
-      <div>
-        <label htmlFor="address">Location:</label>
-        <input type="text" id="address" name="address" required />
-      </div>
-      <div>
-        <label htmlFor="price">Price:</label>
-        <input type="number" id="price" name="price" required />
-      </div>
-      <div>
-        <label htmlFor="description">Description:</label>
-        <textarea id="description" name="description" required />
-      </div>
-      <button type="submit">Submit</button>
-    </form>
+    <>
+      <h2 className='page_header'>Manage Listings</h2>
+      <form onSubmit={handleSubmit} className="upload-form">
+        <div>
+          <label htmlFor="boatName">Boat Name:</label>
+          <input type="text" id="boatName" name="boatName" required />
+        </div>
+        <div>
+          <label htmlFor="address">Location:</label>
+          <input type="text" id="address" name="address" required />
+        </div>
+        <div>
+          <label htmlFor="price">Price:</label>
+          <input type="number" id="price" name="price" required />
+        </div>
+        <div>
+          <label htmlFor="description">Description:</label>
+          <textarea id="description" name="description" required />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </>
+
   );
 };
 
@@ -212,7 +216,7 @@ const Manage = ({ boatsData, onUpdate, onDelete }) => {
   let formattedTotal = `$${total.toLocaleString()}`;
   return (
     <>
-      <h2 className='manage_header'>Wallet - Overview</h2>
+      <h2 className='manage_header'>Listings - Overview</h2>
       <div className="manage">
         {boatsData.map((boat) => (
           <OwnerCard key={boat.id} boat={boat} onUpdate={onUpdate} onDelete={onDelete} />
@@ -258,10 +262,10 @@ const Account = ({ page, choice, company, boatsData }) => {
 };
 
 const Wallet = ({ boatsData, money }) => {
-
   let total = 0
   boatsData.forEach((boat) => {
     total += boat.price;
+    return total
   });
   let fommattedMoney = `$${money.toLocaleString()}`;
 
