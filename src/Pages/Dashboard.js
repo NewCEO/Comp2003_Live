@@ -180,7 +180,7 @@ const UploadPage = ({ onAddBoat, handleChangePage }) => {
 
   return (
     <>
-      <h2 className='page_header'>Manage Listings</h2>
+      <h2 className='page_header' style={{ margin: '0 auto', marginTop: '-200px', marginBottom: '50px', color: '#2C4189' }} >Upload Product</h2>
       <form onSubmit={handleSubmit} className="upload-form">
         <div>
           <label htmlFor="boatName">Boat Name:</label>
