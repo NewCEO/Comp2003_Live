@@ -32,6 +32,7 @@
   text-align: left;
   margin-left: 200px;
   font-family: 'Work Sans', sans-serif;
+  color: #2c4189;
 }
 
 .user-info {
@@ -73,7 +74,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 
 .main-page {
@@ -172,6 +173,12 @@
 
 /* Manage */
 
+.manage_header {
+  margin-top: -100px;
+  margin-bottom: 50px;
+  color: #2c4189;
+}
+
 .manage {
   display: flex;
   flex-wrap: wrap;
@@ -181,7 +188,7 @@
 }
 
 .manage-card {
-  background-color: #fff;; 
+  background-color: #fff;
   border: 1px solid #e3e3e3;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -284,7 +291,7 @@
 }
 
 .card {
-  background-color: #fff;; /*changed css from red to light grey */
+  background-color: #fff; /*changed css from red to light grey */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 1px;
   padding: 15px;
@@ -415,7 +422,7 @@
   margin: 0 0 20px;
 }
 
-.wallet-card h2{
+.wallet-card h2 {
   color: rgba(0, 0, 0, 0.966);
   margin-bottom: 20px;
 }
@@ -437,6 +444,24 @@
 }
 
 /* sharon css*/
+
+.topUp-btn {
+  background-color: white;
+  border-color: red;
+  border-radius: 3px;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  width: 100px;
+  margin-top: 40px;
+}
+
+.topUp-btn:hover {
+  background-color: rgba(255, 0, 0, 0.792);
+  color: white;
+}
 .dashboard-card {
   text-align: left;
 }
@@ -471,4 +496,17 @@
 
 .card-title {
   font-family: 'Montserrat', sans-serif;
+}
+
+.page_header {
+  font-family: 'Montserrat', sans-serif;
+  margin-right: auto;
+  margin-left: 20px;
+  /* margin-top: 20px; */
+  margin-bottom: 50px;
+}
+.error-message {
+  color: red;
+  font-family: 'Montserrat', sans-serif;
+  font-size: small;
 }
