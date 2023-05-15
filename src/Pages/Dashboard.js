@@ -19,12 +19,14 @@ const Sidebar = ({ onChangePage }) => {
   return (
     <div className="sidebar">
       <div className="sidebar-content">
-        <div className="sidebar-logo">
+        <div className="sidebar-logo"><a href='/'>
           <img
             src={logo}
             className="d-inline-block align-top mt-3"
             alt="Dskafos logo"
           />
+        </a>
+
         </div>
         <hr />
         <div className="sidebar-icons">
