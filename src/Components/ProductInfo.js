@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import '../CSS/ProductInfo.css'
 import Imgslider from '../Components/Slider'
@@ -8,12 +8,17 @@ import { Container, Row } from 'react-bootstrap';
 
 
 function ProductInfo() {
-    const [position, setPosition] = useState('middle-center');
+
+    const [position] = useState('middle-center');
+
 
     return (
         <>
             <ToastContainer className="p-3" position={position}>
-                <Toast className='toast'>
+                <Toast className='toast' show={showA} onClose={toggleShowA}>
+
+                    <FontAwesomeIcon icon={faMultiply} className='icon' style={{ float: "right", marginBottom: '5px' }} onClick={toggleShowA} />
+
                     <Toast.Body>
                         <Imgslider />
                         <Container>
@@ -26,7 +31,7 @@ function ProductInfo() {
 
                             <div className='right-card-div'>
                                 <Row className='product-card-div' style={{ marginTop: '3rem' }}>
-                                    <Card style={{ width: '6rem' }}>
+                                    <Card className="productcard" style={{ width: '6.5rem' }}>
                                         <Card.Body class="product-cardbody">
                                             <span>Fuel type</span>
                                             <h5>Diesel</h5>
@@ -34,7 +39,7 @@ function ProductInfo() {
 
                                     </Card>
 
-                                    <Card style={{ width: '6rem' }}>
+                                    <Card className="productcard" style={{ width: '6.5rem' }}>
                                         <Card.Body class="product-cardbody">
                                             <span>Fuel tank</span>
                                             <h5>600L</h5>
@@ -42,7 +47,7 @@ function ProductInfo() {
 
                                     </Card>
 
-                                    <Card style={{ width: '6rem' }}>
+                                    <Card className="productcard" style={{ width: '6.5rem' }}>
                                         <Card.Body class="product-cardbody">
                                             <span>Generator</span>
                                             <h5>4.00kw</h5>
@@ -51,7 +56,7 @@ function ProductInfo() {
                                     </Card>
 
                                     <Row className='product-card-div'>
-                                        <Card style={{ width: '6rem' }}>
+                                        <Card className="productcard" style={{ width: '6.5rem' }}>
                                             <Card.Body class="product-cardbody">
                                                 <span>Draft</span>
                                                 <h5>3.11ft</h5>
@@ -59,7 +64,7 @@ function ProductInfo() {
 
                                         </Card>
 
-                                        <Card style={{ width: '6rem' }}>
+                                        <Card className="productcard" style={{ width: '6.5rem' }}>
                                             <Card.Body class="product-cardbody">
                                                 <span>Length Overall</span>
                                                 <h5>11m / 36 ft</h5>
@@ -67,7 +72,7 @@ function ProductInfo() {
 
                                         </Card>
 
-                                        <Card style={{ width: '6rem' }}>
+                                        <Card className="productcard" style={{ width: '6.5rem' }}>
                                             <Card.Body class="product-cardbody">
                                                 <span>Displacement</span>
                                                 <h5>4.7T</h5>

@@ -1,11 +1,11 @@
 .toast {
   width: 68rem;
-  height: 39rem;
+  /* height: 39rem; */
   background-color: black;
   padding: 1rem;
 }
 
-.container {
+.product_container {
   display: flex;
   justify-content: space-between;
 }
@@ -20,19 +20,20 @@
 }
 
 .Product-title {
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   padding: 1rem;
   float: left;
-  width: 50%;
+  width: 60%;
 }
 
 .Product-title h1 {
   color: #ee3b33;
   font-weight: 700;
   font-family: 'Work Sans', sans-serif;
+  text-align: inherit;
 }
 
-.Product-title span {
+.product_price {
   color: white;
   font-family: 'Work Sans', sans-serif;
   font-size: 1.4rem;
@@ -42,26 +43,34 @@
 .Product-title p {
   color: white;
   font-family: 'Work Sans', sans-serif;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.product_description {
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
   text-align: justify;
-  margin-top: 1.7rem;
 }
 
 .right-card-div {
   float: right;
-  width: 50%;
+  width: 40%;
 }
 
 .product-card-div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
-.card {
+.productcard {
   background-color: white;
   height: 8rem;
+  width: '6.5rem';
 }
 
 .product-cardbody {
@@ -72,9 +81,9 @@
 .right-card-div h5 {
   font-size: 0.85rem;
   font-family: 'Work Sans', sans-serif;
-  color: red;
+  color: #3c4e91;
   font-weight: 800;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .right-card-div span {

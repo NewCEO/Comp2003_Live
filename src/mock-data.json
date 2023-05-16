@@ -1,15 +1,15 @@
 [
   {
     "id": 1,
-    "name": "Speed Master 1000",
+    "name": "The 340 HT",
     "image": "https://images.boats.com/resize/1/83/40/8338340_20220601053956456_1_XLARGE.jpg?t=1654011812000&w=1200&h=1200,https://images.boats.com/resize/1/83/40/8338340_20220601054000709_1_XLARGE.jpg?t=1654011812000&w=1200&h=1200, https://images.boats.com/resize/1/83/40/8338340_20220601053951513_1_XLARGE.jpg?t=1654011812000&w=1200&h=1200",
-    "description": "Wow this boat is soo cool",
+    "description": "The 340 has voluptuous curves and are beautifully offset by clearly defined,crisp running lines that make an indelible first impression. Demonstrating Birchwood’s renowned flexibility, the 340 is available with or without a hard top, This feature allows the boat to be commissioned for pure sporting fun or with the practicality of a cockpit canopy. Below deck, a double cabin and convertible dinette sleep four in comfort while the spacious exterior includes a bathing platform and generous seating and sun lounging area. Either option provides an exhilarating ride with unrivaled comfort and accommodation.",
     "specification": "Spec1 ### Spec2 ### Spec3",
     "facts": "This is hidden from the boat view",
     "price": "9000",
     "rent": "500",
     "type": "buy",
-    "Location": "The Americas"
+    "location": "The Americas"
   },
   {
     "id": 2,
@@ -19,7 +19,9 @@
     "specification": "Spec1 ### Spec2 ### Spec3",
     "facts": "This is hidden from the boat view",
     "price": "1,000,000",
-    "rent": "500"
+    "rent": "500",
+    "type": "rent",
+    "location": "Australia/Asia"
   },
   {
     "id": 3,
@@ -29,7 +31,9 @@
     "specification": "Spec1 ### Spec2 ### Spec3",
     "facts": "This is hidden from the boat view",
     "price": "1,000,000",
-    "rent": "500"
+    "rent": "500",
+    "type": "buy",
+    "location": "Mediterranean/Europe"
   },
   {
     "id": 4,
@@ -39,7 +43,9 @@
     "specification": "Spec1 ### Spec2 ### Spec3",
     "facts": "This is hidden from the boat view",
     "price": "1,000,000",
-    "rent": "500"
+    "rent": "500",
+    "type": "rent",
+    "location": "UK & Ireland"
   },
   {
     "id": 5,
@@ -49,7 +55,9 @@
     "specification": "Spec1 ### Spec2 ### Spec3",
     "facts": "This is hidden from the boat view",
     "price": "1,000,000",
-    "rent": "500"
+    "rent": "500",
+    "type": "rent",
+    "location": "Australia/Asia"
   },
   {
     "id": 6,
@@ -59,7 +67,9 @@
     "specification": "Spec1 ### Spec2 ### Spec3",
     "facts": "This is hidden from the boat view",
     "price": "1,000,000",
-    "rent": "500"
+    "rent": "500",
+    "type": "buy",
+    "location": "The Americas"
   },
   {
     "id": 7,
@@ -69,6 +79,8 @@
     "specification": "Spec1 ### Spec2 ### Spec3",
     "facts": "This is hidden from the boat view",
     "price": "1,000,000",
-    "rent": "500"
+    "rent": "500",
+    "type": "rent",
+    "location": "UK & Ireland"
   }
 ]

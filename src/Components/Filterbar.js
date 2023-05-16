@@ -7,15 +7,7 @@ function FilterBar(props) {
 
   const types = Array.from(new Set(rawdata.map((boat) => boat.type)));
   const models = Array.from(new Set(rawdata.map((boat) => boat.name)));
-  const prices = Array.from(new Set(rawdata.map((boat) => boat.price)));
-
-  const locations = [
-    "The Americas",
-    "Australia/Asia",
-    "Mediterranean/Europe",
-    "UK & Ireland",
-  ];
-
+  const locations = Array.from(new Set(rawdata.map((boat) => boat.location)));
 
   const handleTypeChange = (e) => {
     handleFilter(e.target.value, "type");
@@ -35,19 +27,19 @@ function FilterBar(props) {
     handleFilter(location, "location", isChecked);
   };
 
-  const handleReset = () => {
-    handleFilter("", "reset");
-  };
+  // const handleReset = () => {
+  //   handleFilter("", "reset");
+  // };
 
-  const handleApply = () => {
-    handleFilter("", "apply");
-  };
+  // const handleApply = () => {
+  //   handleFilter("", "apply");
+  // };
 
   return (
     <div className="filter-container">
       <div className="filter-header">Filters</div>
       <div className="filter-types">
-        <label>Type:</label>
+        <label className="mb-2">Type:</label>
         <select onChange={handleTypeChange}>
           <option value="">All</option>
           {types.map((type) => (
@@ -58,7 +50,7 @@ function FilterBar(props) {
         </select>
       </div>
       <div className="filter-models">
-        <label>Model:</label>
+        <label className="mb-2">Model:</label>
         <select onChange={handleModelChange}>
           <option value="">All</option>
           {models.map((model) => (
@@ -69,35 +61,34 @@ function FilterBar(props) {
         </select>
       </div>
       <div className="filter-prices">
-        <label>Price:</label>
+        <label className="mb-2">Price:</label>
         <select onChange={handlePriceChange}>
           <option value="">All</option>
-          {prices.map((price) => (
-            <option key={price} value={price}>
-              {price}
-            </option>
-          ))}
+          <option value="0-9999">Less than $10,000</option>
+          <option value="10000-49999">$10,000 - $49,999</option>
+          <option value="50000-99999">$50,000 - $99,999</option>
+          <option value="100000-1000000">More than $100,000</option>
         </select>
       </div>
       <div className="filter-section">
-      <label>Location:</label>
-      {locations.map((location) => (
-        <div key={location}>
-          <label>
-            <input
-              type="checkbox"
-              value={location}
-              onChange={handleLocationChange}
-            />
-            {location}
-          </label>
-        </div>
-      ))}
+        <label className="mb-2">Location:</label>
+        {locations.map((location) => (
+          <div key={location}>
+            <label>
+              <input
+                type="checkbox"
+                value={location}
+                onChange={handleLocationChange}
+              />
+              {location}
+            </label>
+          </div>
+        ))}
       </div>
-      <div className="filter-actions">
+      {/* <div className="filter-actions">
         <button onClick={handleReset}>Reset</button>
         <button onClick={handleApply}>Apply</button>
-      </div>
+      </div> */}
     </div>
   );
 }
