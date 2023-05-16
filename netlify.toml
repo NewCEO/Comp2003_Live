@@ -3,7 +3,12 @@
   publish = "/build"
   base ="/"
 
-[[redirects]]
+  [[redirects]]
   from = "/filtercard"
   to = "/* filtercard"
+  status = 200
+
+  [[redirects]]
+  from = "/vendor"
+  to = "/vendor"
   status = 200
