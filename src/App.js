@@ -45,7 +45,7 @@ const App = () => {
         <Route path='/usertype' element={<Usertype />} />
         <Route path='/vendor' element={<Vendor choice={choice} setChoice={setChoice} company={company} setCompany={setCompany} />} />
         <Route path='/dashboard' element={<Dashboard choice={choice} company={company} money={money} />} />
-        <Route path='/vendor' element={<Vendor />} />
+        <Route path='/chooseservice' element={<Vendor />} />
         <Route path='/cardcomponent' element={<CardComponent />} />
         <Route path='/cardlist' element={<CardList />} />
         <Route path='/range' element={<Filtercards />} />

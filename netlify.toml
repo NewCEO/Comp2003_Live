@@ -4,11 +4,11 @@ command = "npm run build -- --ignore-warnings"
 
 [[redirects]]
   from = "/vendor"
-  to = "/vendor"
+  to = "/chooseservice"
   status = 200
 
 
 [[redirects]]
-  from = "/filterbar"
+  from = "/filtercards"
   to = "/range"
   status = 200
