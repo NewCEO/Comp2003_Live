@@ -10,5 +10,5 @@
 
   [[redirects]]
   from = "/vendor"
-  to = "/vendor"
+  to = "/"
   status = 200
