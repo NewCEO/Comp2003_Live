@@ -5,7 +5,7 @@
 
   [[redirects]]
   from = "/filtercard"
-  to = "/* filtercard"
+  to = "/"
   status = 200
 
   [[redirects]]
