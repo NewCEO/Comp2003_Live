@@ -5,10 +5,12 @@ command = "npm run build -- --ignore-warnings"
 [[redirects]]
   from = "/vendor"
   to = "/chooseservice"
+  force = true
   status = 200
 
 
 [[redirects]]
   from = "/filtercards"
   to = "/range"
+  force = true
   status = 200
