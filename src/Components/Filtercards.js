@@ -205,8 +205,6 @@ function Filtercards(props) {
                   </Row>
                 </div>
               </Container>
-
-
             </Toast.Body>
           </Toast>
         )}

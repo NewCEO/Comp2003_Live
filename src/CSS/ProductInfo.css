@@ -1,6 +1,6 @@
 .toast {
   width: 68rem;
-  /* height: 39rem; */
+  height: 100vh;
   background-color: black;
   padding: 1rem;
 }
