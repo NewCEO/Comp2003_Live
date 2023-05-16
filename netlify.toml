@@ -5,7 +5,8 @@ command = "npm run build -- --ignore-warnings"
 [[redirects]]
   from = "/vendor"
   to = "/vendor"
-  status = 200,
+  status = 200
+  
   from = "/filtercards"
   to = "/filtercards"
   status = 200
