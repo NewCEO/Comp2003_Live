@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Boat from "./Pages/Boat_Page"
+import Boat from "./Pages/Boat_Page";
 import Login from "./Pages/Login";
 import SignIn from "./Pages/SignIn";
 import BoatBuy from "./Pages/BoatBuy"
-import BoatRent from "./Pages/BoatRent"
-import Usertype from "./Pages/Usertype"
-import Vendor from "./Pages/Vendor"
-import Rent from "./Components/Rent"
-import Landing from "./Components/Landing"
-import { Route, Routes } from "react-router-dom"
+import BoatRent from "./Pages/BoatRent";
+import Usertype from "./Pages/Usertype";
+import Vendor from "./Pages/Vendor";
+import Rent from "./Components/Rent";
+import Landing from "./Components/Landing";
+import { Route, Routes } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard";
-import VendorData from "./vendor-data"
-
+import VendorData from "./vendor-data";
 import CardComponent from "./Components/Cardcomponent";
 import CardList from "./Components/Cardlist";
 import Filtercards from "./Components/Filtercards";
