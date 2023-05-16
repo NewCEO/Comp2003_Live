@@ -8,16 +8,13 @@ import BoatRent from "./Pages/BoatRent"
 import Usertype from "./Pages/Usertype"
 import Vendor from "./Pages/Vendor"
 import Rent from "./Components/Rent"
-// import User from "./Pages/User"
 import Landing from "./Components/Landing"
 import { Route, Routes } from "react-router-dom"
 import Dashboard from "./Pages/Dashboard";
 import VendorData from "./vendor-data"
-// import BoatId from "./Components/BoatId";
+
 import CardComponent from "./Components/Cardcomponent";
-import FilterBar from "./Components/Sidebar 1";
 import CardList from "./Components/Cardlist";
-import FilterBar1 from "./Components/Filterbar";
 import Filtercards from "./Components/Filtercards";
 
 
