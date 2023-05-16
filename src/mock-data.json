@@ -6,69 +6,81 @@
     "description": "The 340 has voluptuous curves and are beautifully offset by clearly defined,crisp running lines that make an indelible first impression. Demonstrating Birchwood’s renowned flexibility, the 340 is available with or without a hard top, This feature allows the boat to be commissioned for pure sporting fun or with the practicality of a cockpit canopy. Below deck, a double cabin and convertible dinette sleep four in comfort while the spacious exterior includes a bathing platform and generous seating and sun lounging area. Either option provides an exhilarating ride with unrivaled comfort and accommodation.",
     "specification": "Spec1 ### Spec2 ### Spec3",
     "facts": "This is hidden from the boat view",
-    "price": "9000",
-    "rent": "500",
+    "price": "100,000.00",
+    "rent": "5000",
     "type": "buy",
     "location": "The Americas"
   },
   {
     "id": 2,
-    "name": "Speed Master 1000",
+    "name": "Fisherman's Pride",
     "image": "https://images.pexels.com/photos/6585322/pexels-photo-6585322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "description": "Speed master 1000 is the original fast boat!",
-    "specification": "Spec1 ### Spec2 ### Spec3",
+    "description": "A rugged fishing boat built for avid anglers and fishing enthusiasts. With its sturdy construction and specialized fishing equipment, Fisherman's Pride is designed to withstand the demands of deep-sea fishing. It features a large fishing deck, multiple rod holders, and ample storage for tackle and catch. Equipped with the latest fish-finding technology and a spacious cabin for relaxation and respite, this boat ensures an unforgettable fishing experience, whether targeting big game fish or enjoying a peaceful day on the water.",
+    "specification": "Length: 10.5m ### Engine Power: 300hp ### Maximum Speed: 50 knots",
     "facts": "This is hidden from the boat view",
-    "price": "1,000,000",
-    "rent": "500"
+    "price": "1,250,000",
+    "rent": "550",
+    "type": "buy",
+    "location": "Plymouth"
   },
   {
     "id": 3,
-    "name": "Speed Master 3000",
+    "name": "Sea Mist",
     "image": "https://images.pexels.com/photos/6585322/pexels-photo-6585322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "description": "Wow this boat is soo cool",
-    "specification": "Spec1 ### Spec2 ### Spec3",
+    "description": "A charming sailboat with a classic design that evokes a sense of timeless elegance. Sea Mist features a beautiful wooden hull and billowing white sails, capturing the essence of traditional sailing. This boat offers a spacious and cozy cabin with all the necessary amenities for a comfortable voyage. With its nimble maneuverability and gentle glide through the water, Sea Mist is perfect for those seeking a serene and romantic sailing experience along scenic coastlines or across vast oceans.",
+    "specification": "Length: 12m ### Engine Power: 400hp ### Maximum Speed: 55 knots",
     "facts": "This is hidden from the boat view",
-    "price": "1,000,000",
-    "rent": "500"
+    "price": "980,000",
+    "rent": "520",
+    "type": "rent",
+    "location": "China Sea"
   },
   {
     "id": 4,
-    "name": "Speed Master 1000",
+    "name": "Aqua Paradise",
     "image": "https://images.pexels.com/photos/6585322/pexels-photo-6585322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "description": "Wow this boat is soo cool",
-    "specification": "Spec1 ### Spec2 ### Spec3",
+    "description": "Wow, this boat is so cool!",
+    "specification": "Length: 9.5m ### Engine Power: 250hp ### Maximum Speed: 45 knots",
     "facts": "This is hidden from the boat view",
-    "price": "1,000,000",
-    "rent": "500"
+    "price": "1,150,000",
+    "rent": "580",
+    "type": "rent",
+    "location": "Reading Seas"
   },
   {
     "id": 5,
-    "name": "Speed Master 1000",
+    "name": "Ocean Explorer",
     "image": "https://images.pexels.com/photos/6585322/pexels-photo-6585322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "description": "Wow this boat is soo cool",
-    "specification": "Spec1 ### Spec2 ### Spec3",
+    "description": "Wow, this boat is so cool!",
+    "specification": "Length: 11m ### Engine Power: 350hp ### Maximum Speed: 50 knots",
     "facts": "This is hidden from the boat view",
-    "price": "1,000,000",
-    "rent": "500"
+    "price": "1,050,000",
+    "rent": "530",
+    "type": "Rent",
+    "location": "Buckaroo Beaches"
   },
   {
     "id": 6,
-    "name": "Speed Master 4000",
+    "name": "Thunderbolt",
     "image": "https://images.pexels.com/photos/6585322/pexels-photo-6585322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "description": "Wow this boat is soo cool",
-    "specification": "Spec1 ### Spec2 ### Spec3",
+    "description": "An adrenaline-pumping speedboat designed for thrill-seekers. With its bold red hull and streamlined profile, Thunderbolt is built for high-speed adventures on the water. Equipped with powerful engines, this boat can reach impressive speeds, making it ideal for water sports enthusiasts and racing enthusiasts alike. Its ergonomic seating and cutting-edge navigation system ensure a comfortable and exhilarating ride, while the spacious storage compartments allow for easy stowing of gear and equipment.",
+    "specification": "Length: 13m ### Engine Power: 450hp ### Maximum Speed: 60 knots",
     "facts": "This is hidden from the boat view",
-    "price": "1,000,000",
-    "rent": "500"
+    "price": "1,350,000",
+    "rent": "590",
+    "type": "Buy",
+    "location": "Buckaroo Beaches"
   },
   {
     "id": 7,
-    "name": "Speed Master 4000",
+    "name": "Serenity's Dream",
     "image": "https://images.pexels.com/photos/6585322/pexels-photo-6585322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "description": "Wow this boat is soo cool",
-    "specification": "Spec1 ### Spec2 ### Spec3",
+    "description": "A luxurious yacht with sleek lines and a pristine white exterior. This vessel boasts spacious decks perfect for sunbathing and entertaining guests, while the interior exudes elegance with its polished wood finishes and plush furnishings. Serenity's Dream offers a state-of-the-art entertainment system, a gourmet kitchen, and luxurious cabins to accommodate up to ten passengers. Whether cruising along tranquil coastlines or exploring exotic destinations, this boat promises an unforgettable and relaxing experience.",
+    "specification": "Length: 13m ### Engine Power: 450hp ### Maximum Speed: 60 knots",
     "facts": "This is hidden from the boat view",
     "price": "1,000,000",
-    "rent": "500"
+    "rent": "500",
+    "type": "Buy",
+    "location": "Victoria Islands"
   }
 ]

@@ -13,6 +13,7 @@ import Card from 'react-bootstrap/Card';
 import { Container, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMultiply } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -27,6 +28,13 @@ function Filtercards(props) {
   const [showA, setShowA] = useState(false);
   const toggleShowA = () => setShowA(!showA);
   const [selectedBoat, setSelectedBoat] = useState(null);
+
+  const navigate = useNavigate()
+
+  function boatClick(id){
+    console.log('click',id)
+  navigate(`/boat/${id}`,)
+  }
 
 
 
@@ -64,11 +72,11 @@ function Filtercards(props) {
     })
 
     .map((boat) => (
-      <div key={boat.id} className="card">
-        <img src={boat.image} alt={boat.name} />
+      <div key={boat.id} className="card" >
+        <img src={boat.image} alt={boat.name} onClick={e =>boatClick(boat.id)}/>
         <h2 style={{ fontFamily: 'Montserrat', marginTop: '10px' }} >{boat.name}</h2>
-        <div className="card-details">
-          <p style={{ marginLeft: '5px' }}>Location: {boat.location}</p>
+        <div className="card-details" >
+          <p style={{ marginLeft: '5px' }} onClick={e =>boatClick(boat.id)}>Location: {boat.location} </p>
           <p style={{ marginLeft: '5px' }}>Price: ${boat.price.toLocaleString()}</p>
           <button className="view-details" onClick={() => handleFilter(null, "details", false, boat)}>
             View Details
@@ -145,7 +153,7 @@ function Filtercards(props) {
               <Container className="product_container">
                 <div className='Product-title'>
                   <p className="product_price">
-                    ${selectedBoat.price.toLocaleString()}</p>
+                    £{selectedBoat.price.toLocaleString()}</p>
                   <h1>{selectedBoat.name}</h1>
                   <p className="product_price">{selectedBoat.location}</p>
                   <description className="product_description">{selectedBoat.description}</description>

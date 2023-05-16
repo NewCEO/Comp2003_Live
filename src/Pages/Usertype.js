@@ -28,9 +28,21 @@ const Usertype = () => {
                 <a href="/filtercard" className="stretched-link">
                 </a>
               </Card.Body>
+
             </Card>
 
+            {/* 
 
+            <Card style={{ width: '25rem' }}>
+              <Card.Body>
+                <Card.Title>I’m a Boat Owner</Card.Title>
+                <Card.Text>
+                  I own a boat and want to service or put it up for sale or rent.
+                </Card.Text>
+              </Card.Body>
+              <a href="#" className="stretched-link">
+              </a>
+            </Card> */}
 
 
 
@@ -40,9 +52,9 @@ const Usertype = () => {
                 <Card.Text>
                   I offer boat related product and services and would like to join Birchwood Vendors.
                 </Card.Text>
-                <a href="/vendor" className="stretched-link">
-                </a>
               </Card.Body>
+              <a href="/vendor" className="stretched-link">
+              </a>
             </Card>
             <p className="p-alert"> If you already have an account, Click <span>&nbsp;<Link to="/login" className="link-text">here</Link>&nbsp;</span>to Sign in</p>
           </Row>

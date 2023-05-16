@@ -24,7 +24,7 @@ export default function BoatId() {
     const boatSpec = data.specification.split('###')
 
     function handlePurchase() {
-        window.location.href = 'https://checkout.stripe.com/c/pay/cs_test_a1BnUdBiOEmEgkHbsrK213KgLauw86eFVJNcdS4xWtpIqkPD6lLlMTjZlA#fidkdWxOYHwnPyd1blpxYHZxWjA0SH9LckFPaUhVc09CNlxQVGw2XU5QcnZVSjF1NTVNVFJ2MF0wM0FyVVR0QkpCS3JuMTQ3Y39NS1BrSTNPQG1DTzY1PHc9cG1wS3BgZGg1RkpCT2Bgb1ZINTVhQVwyalJsMycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl';
+        window.location.href = 'https://checkout.stripe.com/c/pay/cs_test_a1T8e3O3wg88oeceerD8Hv56zMAaJlyJtxDT8vnqlSExarg4xuaqim37pt#fidkdWxOYHwnPyd1blpxYHZxWjA0SH9LckFPaUhVc09CNlxQVGw2XU5QcnZVSjF1NTVNVFJ2MF0wM0FyVVR0QkpCS3JuMTQ3Y39NS1BrSTNPQG1DTzY1PHc9cG1wS3BgZGg1RkpCT2Bgb1ZINTVhQVwyalJsMycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl';
     }
 
     return (
@@ -34,7 +34,7 @@ export default function BoatId() {
                     <button
                         type="button"
                         class="btn btn-link"
-                        onClick={() => navigate("/boat")}>
+                        onClick={() => navigate("/filtercard")}>
                         <FontAwesomeIcon icon={faArrowLeft} style={{ color: "#000000", }} />
 
                     </button>
