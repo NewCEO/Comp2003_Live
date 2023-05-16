@@ -8,6 +8,7 @@ command = "npm run build -- --ignore-warnings"
   status = 200
 
 
-
-
-
+[[redirects]]
+  from = "/filterbar"
+  to = "/filterbar"
+  status = 200
