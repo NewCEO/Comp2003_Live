@@ -4,6 +4,6 @@
   base ="/"
 
 [[redirects]]
-  from = "/vendor"
-  to = "/vendor"
+  from = "/filtercard"
+  to = "/* filtercard"
   status = 200
