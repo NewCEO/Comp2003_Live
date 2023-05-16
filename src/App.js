@@ -39,7 +39,6 @@ const App = () => {
     <div>
       <Routes>
         <Route path="/" element={<Landing />} />
-        {/* <Route path="/about" element={<About/>}/> */}
         <Route path="/boat" element={<Boat />} />
         <Route path="/boat/:id" element={<BoatBuy />} />
         <Route path="/boat/:id" element={<BoatRent />} />
@@ -50,14 +49,9 @@ const App = () => {
         <Route path='/vendor' element={<Vendor choice={choice} setChoice={setChoice} company={company} setCompany={setCompany} />} />
         <Route path='/dashboard' element={<Dashboard choice={choice} company={company} money={money} />} />
         <Route path='/vendor' element={<Vendor />} />
-        {/* <Route path='/user' element={<User />} /> */}
-        {/* <Route path='/dashboard' element={<Dashboard />} /> */}
-        {/* <Route path='/boatid' element={<BoatId />} /> */}
         <Route path='/cardcomponent' element={<CardComponent />} />
-        <Route path='/filterbar' element={<FilterBar />} />
         <Route path='/cardlist' element={<CardList />} />
-        <Route path='/filterbar1' element={<FilterBar1 />} />
-        <Route path='/filtercards' element={<Filtercards />} />
+        <Route path='/range' element={<Filtercards />} />
       </Routes >
     </div >
 

@@ -10,5 +10,5 @@ command = "npm run build -- --ignore-warnings"
 
 [[redirects]]
   from = "/filterbar"
-  to = "/filterbar"
+  to = "/range"
   status = 200
