@@ -19,9 +19,7 @@
     "specification": "Spec1 ### Spec2 ### Spec3",
     "facts": "This is hidden from the boat view",
     "price": "1,000,000",
-    "rent": "500",
-    "type": "rent",
-    "location": "Australia/Asia"
+    "rent": "500"
   },
   {
     "id": 3,
@@ -31,9 +29,7 @@
     "specification": "Spec1 ### Spec2 ### Spec3",
     "facts": "This is hidden from the boat view",
     "price": "1,000,000",
-    "rent": "500",
-    "type": "buy",
-    "location": "Mediterranean/Europe"
+    "rent": "500"
   },
   {
     "id": 4,
@@ -43,9 +39,7 @@
     "specification": "Spec1 ### Spec2 ### Spec3",
     "facts": "This is hidden from the boat view",
     "price": "1,000,000",
-    "rent": "500",
-    "type": "rent",
-    "location": "UK & Ireland"
+    "rent": "500"
   },
   {
     "id": 5,
@@ -55,9 +49,7 @@
     "specification": "Spec1 ### Spec2 ### Spec3",
     "facts": "This is hidden from the boat view",
     "price": "1,000,000",
-    "rent": "500",
-    "type": "rent",
-    "location": "Australia/Asia"
+    "rent": "500"
   },
   {
     "id": 6,
@@ -67,9 +59,7 @@
     "specification": "Spec1 ### Spec2 ### Spec3",
     "facts": "This is hidden from the boat view",
     "price": "1,000,000",
-    "rent": "500",
-    "type": "buy",
-    "location": "The Americas"
+    "rent": "500"
   },
   {
     "id": 7,
@@ -79,8 +69,6 @@
     "specification": "Spec1 ### Spec2 ### Spec3",
     "facts": "This is hidden from the boat view",
     "price": "1,000,000",
-    "rent": "500",
-    "type": "rent",
-    "location": "UK & Ireland"
+    "rent": "500"
   }
 ]

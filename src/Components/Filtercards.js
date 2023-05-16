@@ -123,7 +123,7 @@ function Filtercards(props) {
             className="d-inline-block align-top"
             alt="Dskafos logo"
           />
-          <h1>The Range</h1>
+          <h1 style={{ marginTop: "-80px" }}>The Range</h1>
         </div>
       </Navbar.Brand>
       <div className="page">

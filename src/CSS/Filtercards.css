@@ -7,9 +7,9 @@
   height: 100vh;
 }
 
-.header {
-  margin-top: -80;
-}
+/* .header {
+  margin-top: -80px;
+} */
 
 .filter-bar {
   grid-row: 2;

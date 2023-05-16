@@ -17,13 +17,13 @@ export default class Imgslider extends Component {
             <div className='container'>
                 <Slider className='slider' {...settings}>
                     <div>
-                        <img src={Slide1} alt='' />
+                        <img src={Slide1} />
                     </div>
                     <div>
-                        <img src={Slide2} alt='' />
+                        <img src={Slide2} />
                     </div>
                     <div>
-                        <img src={Slide1} alt='' />
+                        <img src={Slide1} />
                     </div>
 
                 </Slider>

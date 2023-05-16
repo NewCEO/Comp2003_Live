@@ -21,7 +21,7 @@ function ProductInfo() {
 
                     <Toast.Body>
                         <Imgslider />
-                        <Container>
+                        <Container className='productcontainer'>
                             <div className='Product-title'>
                                 <span>
                                     £300,000</span>

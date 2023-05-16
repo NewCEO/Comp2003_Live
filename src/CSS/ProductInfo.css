@@ -5,7 +5,7 @@
   padding: 1rem;
 }
 
-.product_container {
+.productcontainer {
   display: flex;
   justify-content: space-between;
 }
@@ -20,20 +20,21 @@
 }
 
 .Product-title {
-  /* margin-top: 1.5rem; */
+  margin-top: 1.5rem;
   padding: 1rem;
   float: left;
-  width: 60%;
+  width: 50%;
 }
 
 .Product-title h1 {
   color: #ee3b33;
   font-weight: 700;
   font-family: 'Work Sans', sans-serif;
-  text-align: inherit;
+  width: 39%;
+  margin-left: -5px;
 }
 
-.product_price {
+.Product-title span {
   color: white;
   font-family: 'Work Sans', sans-serif;
   font-size: 1.4rem;
@@ -44,33 +45,31 @@
   color: white;
   font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
-  margin-left: 5px;
-  margin-top: 5px;
+  text-align: justify;
+  margin-top: 1.7rem;
 }
 
 .product_description {
   color: white;
   font-family: 'Work Sans', sans-serif;
-  font-size: 1rem;
-  text-align: justify;
+  font-weight: 700;
 }
 
 .right-card-div {
   float: right;
-  width: 40%;
+  width: 50%;
 }
 
 .product-card-div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .productcard {
   background-color: white;
-  height: 8rem;
-  width: '6.5rem';
+  /* height: 8rem; */
 }
 
 .product-cardbody {
@@ -81,9 +80,9 @@
 .right-card-div h5 {
   font-size: 0.85rem;
   font-family: 'Work Sans', sans-serif;
-  color: #3c4e91;
+  color: red;
   font-weight: 800;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .right-card-div span {

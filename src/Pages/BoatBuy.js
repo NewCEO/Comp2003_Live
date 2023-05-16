@@ -23,6 +23,10 @@ export default function BoatId() {
     const boatImg = data.image.split(',')
     const boatSpec = data.specification.split('###')
 
+    function handlePurchase() {
+        window.location.href = 'https://checkout.stripe.com/c/pay/cs_test_a1BnUdBiOEmEgkHbsrK213KgLauw86eFVJNcdS4xWtpIqkPD6lLlMTjZlA#fidkdWxOYHwnPyd1blpxYHZxWjA0SH9LckFPaUhVc09CNlxQVGw2XU5QcnZVSjF1NTVNVFJ2MF0wM0FyVVR0QkpCS3JuMTQ3Y39NS1BrSTNPQG1DTzY1PHc9cG1wS3BgZGg1RkpCT2Bgb1ZINTVhQVwyalJsMycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl';
+    }
+
     return (
         <div>
             <div class="row" className='boatNavBar'>
@@ -75,7 +79,7 @@ export default function BoatId() {
                     <h1 className='boatName'>{data.name}</h1>
                 </div>
                 <div class="col-sm-2">
-                    <button type="button" class="btn btn-purchase">Purchase</button>
+                    <button type="button" class="btn btn-purchase" onClick={handlePurchase}>Purchase</button>
                 </div>
                 <div class="col-sm-3">
 

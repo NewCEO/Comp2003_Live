@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react'
-import "../CSS/Vendor.css";
+import "../CSS/Vendor.css"
 import Button from 'react-bootstrap/Button';
-import Choice from "../Components/Choice";
-import { useNavigate } from 'react-router-dom';
+import Choice from "../Components/Choice"
+import { useNavigate } from 'react-router-dom'
 
 const Vendor = ({ choice, setChoice, company, setCompany }) => {
 

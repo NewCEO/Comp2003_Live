@@ -30,7 +30,18 @@ const Usertype = () => {
               </a>
             </Card>
 
+            {/* 
 
+            <Card style={{ width: '25rem' }}>
+              <Card.Body>
+                <Card.Title>I’m a Boat Owner</Card.Title>
+                <Card.Text>
+                  I own a boat and want to service or put it up for sale or rent.
+                </Card.Text>
+              </Card.Body>
+              <a href="#" className="stretched-link">
+              </a>
+            </Card> */}
 
 
 
