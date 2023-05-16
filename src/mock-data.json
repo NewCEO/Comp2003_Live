@@ -4,11 +4,11 @@
     "name": "The 340 HT",
     "image": "https://images.boats.com/resize/1/83/40/8338340_20220601053956456_1_XLARGE.jpg?t=1654011812000&w=1200&h=1200,https://images.boats.com/resize/1/83/40/8338340_20220601054000709_1_XLARGE.jpg?t=1654011812000&w=1200&h=1200, https://images.boats.com/resize/1/83/40/8338340_20220601053951513_1_XLARGE.jpg?t=1654011812000&w=1200&h=1200",
     "description": "The 340 has voluptuous curves and are beautifully offset by clearly defined,crisp running lines that make an indelible first impression. Demonstrating Birchwood’s renowned flexibility, the 340 is available with or without a hard top, This feature allows the boat to be commissioned for pure sporting fun or with the practicality of a cockpit canopy. Below deck, a double cabin and convertible dinette sleep four in comfort while the spacious exterior includes a bathing platform and generous seating and sun lounging area. Either option provides an exhilarating ride with unrivaled comfort and accommodation.",
-    "specification": "Spec1 ### Spec2 ### Spec3",
+    "specification": "Length: 11m ### Engine Power: 350hp ### Maximum Speed: 50 knots",
     "facts": "This is hidden from the boat view",
     "price": "100,000.00",
     "rent": "5000",
-    "type": "buy",
+    "type": "Buy",
     "location": "The Americas"
   },
   {
@@ -20,7 +20,7 @@
     "facts": "This is hidden from the boat view",
     "price": "1,250,000",
     "rent": "550",
-    "type": "buy",
+    "type": "Buy",
     "location": "Plymouth"
   },
   {
@@ -32,26 +32,26 @@
     "facts": "This is hidden from the boat view",
     "price": "980,000",
     "rent": "520",
-    "type": "rent",
+    "type": "Rent",
     "location": "China Sea"
   },
   {
     "id": 4,
     "name": "Aqua Paradise",
     "image": "https://images.pexels.com/photos/6585322/pexels-photo-6585322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "description": "Wow, this boat is so cool!",
+    "description": "A vibrant catamaran that embodies the spirit of fun and relaxation. With its eye-catching turquoise hull and spacious deck areas, Aqua Paradise is perfect for leisurely cruises and tropical getaways. The boat offers multiple lounging and sunbathing spots, as well as a well-appointed interior with comfortable seating and modern amenities. Aqua Paradise also provides easy access to water activities, such as snorkeling and kayaking, making it an excellent choice for those seeking both adventure and tranquility.",
     "specification": "Length: 9.5m ### Engine Power: 250hp ### Maximum Speed: 45 knots",
     "facts": "This is hidden from the boat view",
     "price": "1,150,000",
     "rent": "580",
-    "type": "rent",
+    "type": "Rent",
     "location": "Reading Seas"
   },
   {
     "id": 5,
     "name": "Ocean Explorer",
     "image": "https://images.pexels.com/photos/6585322/pexels-photo-6585322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "description": "Wow, this boat is so cool!",
+    "description": "A rugged expedition vessel designed for intrepid explorers and adventurers. This robust boat combines a sturdy steel hull with advanced navigation and safety systems, ensuring reliable performance even in challenging conditions. Ocean Explorer features ample deck space for scientific research, wildlife observation, and launching smaller exploration vessels. With its extended range and autonomous capabilities, this boat is well-equipped to discover uncharted territories and delve into the mysteries of the world's oceans.",
     "specification": "Length: 11m ### Engine Power: 350hp ### Maximum Speed: 50 knots",
     "facts": "This is hidden from the boat view",
     "price": "1,050,000",

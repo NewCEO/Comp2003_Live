@@ -8,6 +8,7 @@ import BoatRent from "./Pages/BoatRent";
 import Usertype from "./Pages/Usertype";
 import Vendor from "./Pages/Vendor";
 import Rent from "./Components/Rent";
+import Success from "./Pages/Success";
 import Landing from "./Components/Landing";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard";
@@ -44,6 +45,7 @@ const App = () => {
         <Route path='/cardcomponent' element={<CardComponent />} />
         <Route path='/cardlist' element={<CardList />} />
         <Route path='/filtercard' element={<Filtercards />} />
+        <Route path='/success' element={<Success />} />
       </Routes >
     </div >
 
